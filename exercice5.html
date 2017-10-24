@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exercicejavascript5</title>
+  </head>
+  <body>
+    <form>
+        <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+        <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+        <button  id="valider" name ="valider">Valider</button>
+    </form>
+    <script>
+      document.getElementById('valider').addEventListener('click',function(){
+        var nombre1 = parseInt(document.getElementById('premier_nombre').value);
+        var nombre2 = parseInt(document.getElementById('deuxieme_nombre').value);
+        var result  = nombre1 * nombre2;
+        alert(result);
+      })
+    </script>
+  </body>
+</html>
