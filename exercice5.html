@@ -14,8 +14,8 @@
       document.getElementById('valider').addEventListener('click',function(){
         var nombre1 = document.getElementById('premier_nombre').value;
         var nombre2 = document.getElementById('deuxieme_nombre').value;
-        if (isNaN(nombre1) == false && isNaN(nombre2) == false && nombre2 && nombre1){ //vérification que les données saisis sont bien des nombres
-          var result  = parseInt(nombre1) * parseInt(nombre2); //
+        if (isNaN(nombre1) == false && isNaN(nombre2) == false && nombre2 && nombre1){ //vérification que les données saisis sont bien des nombres (vérifier une saisie utilisateur)
+          var result  = parseInt(nombre1) * nombre2; //équivalent à Math.trunc(nombre1) * nombre2
           alert(result);
         }
         else{
